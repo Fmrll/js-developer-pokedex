@@ -1,8 +1,12 @@
+function convertPokemonTypesToLi(convertPokemonTypes){
+    return convertPokemonTypes.map((typeSlot) => `<li class="type">${typeSlot.type.name}grass</li>`)
+}
+
 const pokemonList = document.getElementById('pokemonList')
 const loadMoreButton = document.getElementById('loadMoreButton')
 
 const maxRecords = 151
-const limit = 10
+const limit = 10;
 let offset = 0;
 
 function convertPokemonToLi(pokemon) {
